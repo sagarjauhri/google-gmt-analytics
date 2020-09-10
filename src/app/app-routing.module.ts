@@ -19,7 +19,11 @@ const routes: Routes = [
   {
     path: 'new-material',
     loadChildren: () => import('./modules/angular-material/angular-material.module').then(m => m.AngularMaterialModule)
-  }
+  },
+  {
+    path: 'pwa-feature',
+    loadChildren: () => import('./modules/angular-pwa/angular-pwa.module').then(m => m.AngularPwaModule)
+  },
 ];
 
 @NgModule({
